@@ -16,41 +16,57 @@ nav {
     height: 100px;
 }
 
-img.logo {
+img {
     width: 70px;
 }
 
 a {
     text-decoration: none;
     color: white;
-
     height: 100%;
+
+    /* Brings links to center */
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-a:hover {
+/* Selects hovered links but not the logo */
+li:not(.logo) a:hover,
+li:not(.logo) a:focus {
     /* Testing Color */
     background-color: gray;
+    outline: none;
+}
+
+li.logo a:focus {
+    background-color: gray;
+    outline: none;
+}
+
+li.logo {
+    width: 5%;
 }
 
 li {
-    height: 100px;
+    background-color: black;
 
-    display: flex;
-    align-items: center;
+    height: 100%;
+    width: 5%;
+
+    float: left;
+
+    transition: all;
+    transition-duration: 0.5s;
 }
 
 ul {
     /* Removes bullet points */
     list-style: none;
 
-    /* Flex lines */
-    display: flex;
-    align-items: center;
-
-    padding: 0;
     margin: 0;
+    padding-left: 1%;
 
     height: 100%;
 }
@@ -58,11 +74,24 @@ ul {
 /* Hides the sublist by default */
 .sublist {
     display: none;
-    position: absolute;
 }
 
 /* Shows the sublist when hovered over */
-li:hover .sublist,
-li:focus-within .sublist {
+ul li:hover > ul,
+ul li ul:hover,
+ul li:focus-within > ul {
+    visibility: visible;
+    opacity: 1;
     display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 150%;
+}
+
+ul li ul li a {
+    padding-left: 10%;
+    text-align: left;
+    justify-content: flex-start;
 }

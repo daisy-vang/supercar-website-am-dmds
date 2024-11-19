@@ -1,0 +1,68 @@
+/* Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins';
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    border-bottom: 3px solid red;
+
+    height: 100px;
+}
+
+img.logo {
+    width: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+a:hover {
+    /* Testing Color */
+    background-color: gray;
+}
+
+li {
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    /* Removes bullet points */
+    list-style: none;
+
+    /* Flex lines */
+    display: flex;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+
+    height: 100%;
+}
+
+/* Hides the sublist by default */
+.sublist {
+    display: none;
+    position: absolute;
+}
+
+/* Shows the sublist when hovered over */
+li:hover .sublist,
+li:focus-within .sublist {
+    display: block;
+}

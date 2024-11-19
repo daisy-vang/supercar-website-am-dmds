@@ -34,14 +34,8 @@ a {
 
 /* Selects hovered links but not the logo */
 li:not(.logo) a:hover,
-li:not(.logo) a:focus {
-    /* Testing Color */
-    background-color: gray;
-    outline: none;
-}
-
-li.logo a:focus {
-    background-color: gray;
+li a:focus {
+    background-color: rgb(93, 93, 93);
     outline: none;
 }
 

@@ -70,12 +70,21 @@ ul {
     display: none;
 }
 
+.sublist li:not(:last-of-type) {
+    border: 3px solid red;
+    border-top: none;
+    border-bottom: none;
+}
+
+.sublist li:last-of-type {
+    border: 3px solid red;
+    border-top: none;
+}
+
 /* Shows the sublist when hovered over */
 ul li:hover > ul,
 ul li ul:hover,
 ul li:focus-within > ul {
-    visibility: visible;
-    opacity: 1;
     display: block;
 }
 

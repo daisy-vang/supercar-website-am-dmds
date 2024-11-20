@@ -1,0 +1,9 @@
+/* Changing a variable changes all colors (try it its fun) */
+:root {
+    --main: rgb(255, 0, 0);
+    --main-border: rgb(133, 0, 0);
+    --main-highlight: rgb(160, 0, 0);
+    --background: rgb(0, 0, 0);
+    --background-highlight: rgb(90, 90, 90);
+    --text: rgb(255, 255, 255);
+}

@@ -1,8 +1,16 @@
 /* Poppins Font */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Changing a variable changes all colors (try it its fun) */
+:root {
+    --main: rgb(255, 0, 0);
+    --main-highlight: rgb(160, 0, 0);
+    --background: rgb(0, 0, 0);
+    --text: rgb(255, 255, 255);
+}
+
 * {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -10,8 +18,8 @@ body {
 }
 
 nav {
-    background-color: black;
-    border-bottom: 3px solid red;
+    background-color: var(--background);
+    border-bottom: 3px solid var(--main);
 
     height: 100px;
 }
@@ -22,7 +30,7 @@ img {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--text);
     height: 100%;
 
     /* Brings links to center */
@@ -33,7 +41,7 @@ a {
 }
 
 /* Selects hovered links but not the logo */
-li:not(.logo) a:hover,
+li:not(:has(img)) a:hover,
 li a:focus {
     background-color: rgb(93, 93, 93);
     outline: none;
@@ -44,11 +52,12 @@ li.logo {
 }
 
 li {
-    background-color: black;
+    background-color: var(--background);
 
     height: 100%;
     width: 5%;
 
+    /* Float left is similar flex start */
     float: left;
 
     transition: all;
@@ -71,14 +80,15 @@ ul {
     transform: translateX(-3px);
 }
 
+/* Styles list items in sublists */
 .sublist li:not(:last-of-type) {
-    border: 3px solid red;
+    border: 3px solid var(--main);
     border-top: none;
     border-bottom: none;
 }
 
 .sublist li:last-of-type {
-    border: 3px solid red;
+    border: 3px solid var(--main);
     border-top: none;
 }
 
@@ -89,18 +99,56 @@ ul li:focus-within > ul {
     display: block;
 }
 
+/* Increases the width of a list item with sublists when hovered over*/
 ul li:hover:has(.sublist),
 ul li:focus-within:has(.sublist) {
     width: 7.5%;
 }
 
+/* List items in sublists */
 ul li ul li {
     clear: both;
     width: 100%;
 }
 
+/* Position links in sublists */
 ul li ul li a {
     padding-left: 10%;
     text-align: left;
     justify-content: flex-start;
+}
+
+/* Position right links to the right */
+ul.right li {
+    float: right;
+    transform: translateY(-100%);
+
+    display: flex;
+    align-items: center;
+}
+
+/* The cart is a little smaller than the other icons */
+img.cart {
+    width: 55px;
+}
+
+ul.right img {
+    padding: 0 5%;
+}
+
+/* The customize button */
+.customize {
+    padding: 0 50%;
+    height: 65%;
+
+    background-color: var(--main);
+    border-radius: 10px 20px 10px 20px;
+    border: 3px solid #850000;
+
+    transform: translateX(-60%);
+}
+
+.customize:hover,
+.customize:focus {
+    background-color: var(--main-highlight);
 }

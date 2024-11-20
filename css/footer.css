@@ -53,6 +53,7 @@ footer a {
     white-space: nowrap;
 }
 
-footer a:hover {
+footer a:hover,
+footer a:focus {
     color: var(--text-highlight);
 }

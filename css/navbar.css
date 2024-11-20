@@ -68,6 +68,7 @@ ul {
 /* Hides the sublist by default */
 .sublist {
     display: none;
+    transform: translateX(-3px);
 }
 
 .sublist li:not(:last-of-type) {
@@ -88,9 +89,14 @@ ul li:focus-within > ul {
     display: block;
 }
 
+ul li:hover:has(.sublist),
+ul li:focus-within:has(.sublist) {
+    width: 7.5%;
+}
+
 ul li ul li {
     clear: both;
-    width: 150%;
+    width: 100%;
 }
 
 ul li ul li a {

@@ -1,14 +1,3 @@
-/* Poppins Font */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    margin: 0;
-}
-
 nav {
     background-color: var(--background);
     border-bottom: 3px solid var(--main);
@@ -16,13 +5,17 @@ nav {
     height: 100px;
 }
 
-img {
+/* Sets width of images */
+nav img {
     width: 70px;
 }
 
-a {
+/* Styles links */
+nav a {
     text-decoration: none;
+    font-weight: var(--normal);
     color: var(--text);
+
     height: 100%;
 
     /* Brings links to center */
@@ -33,17 +26,13 @@ a {
 }
 
 /* Selects hovered links but not the logo */
-li:not(:has(img)) a:hover,
-li a:focus {
+nav li:not(:has(img)) a:hover,
+nav li a:focus {
     background-color: var(--background-highlight);
     outline: none;
 }
 
-li.logo {
-    width: 5%;
-}
-
-li {
+nav li {
     background-color: var(--background);
 
     height: 100%;
@@ -52,11 +41,12 @@ li {
     /* Float left is similar flex start */
     float: left;
 
+    /* This transition is for the items with a sublist */
     transition: all;
     transition-duration: 0.5s;
 }
 
-ul {
+nav ul {
     /* Removes bullet points */
     list-style: none;
 
@@ -67,51 +57,52 @@ ul {
 }
 
 /* Hides the sublist by default */
-.sublist {
+nav .sublist {
     display: none;
     transform: translateX(-3px);
 }
 
 /* Styles list items in sublists */
-.sublist li:not(:last-of-type) {
+nav .sublist li:not(:last-of-type) {
     border: 3px solid var(--main);
     border-top: none;
     border-bottom: none;
 }
 
-.sublist li:last-of-type {
+/* Gives the bottom of a sublist a bottom */
+nav .sublist li:last-of-type {
     border: 3px solid var(--main);
     border-top: none;
 }
 
 /* Shows the sublist when hovered over */
-ul li:hover > ul,
-ul li ul:hover,
-ul li:focus-within > ul {
+nav ul li:hover > ul,
+nav ul li ul:hover,
+nav ul li:focus-within > ul {
     display: block;
 }
 
 /* Increases the width of a list item with sublists when hovered over*/
-ul li:hover:has(.sublist),
-ul li:focus-within:has(.sublist) {
+nav ul li:hover:has(.sublist),
+nav ul li:focus-within:has(.sublist) {
     width: 7.5%;
 }
 
 /* List items in sublists */
-ul li ul li {
+nav ul li ul li {
     clear: both;
     width: 100%;
 }
 
 /* Position links in sublists */
-ul li ul li a {
+nav ul li ul li a {
     padding-left: 10%;
     text-align: left;
     justify-content: flex-start;
 }
 
 /* Position right links to the right */
-ul.right li {
+nav ul.right li {
     float: right;
     transform: translateY(-100%);
 
@@ -120,16 +111,16 @@ ul.right li {
 }
 
 /* The cart is a little smaller than the other icons */
-img.cart {
+nav img.cart {
     width: 55px;
 }
 
-ul.right img {
+nav ul.right img {
     padding: 0 5%;
 }
 
 /* The customize button */
-.customize {
+nav .customize {
     padding: 0 50%;
     height: 65%;
 
@@ -140,7 +131,7 @@ ul.right img {
     transform: translateX(-60%);
 }
 
-.customize:hover,
-.customize:focus {
+nav .customize:hover,
+nav .customize:focus {
     background-color: var(--main-highlight);
 }

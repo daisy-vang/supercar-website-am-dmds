@@ -85,7 +85,7 @@ nav ul li:focus-within > ul {
 /* Increases the width of a list item with sublists when hovered over*/
 nav ul li:hover:has(.sublist),
 nav ul li:focus-within:has(.sublist) {
-    width: 7.5%;
+    width: 175px;
 }
 
 /* List items in sublists */

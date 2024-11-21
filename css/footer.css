@@ -75,29 +75,31 @@ footer p {
     transform: translate(-100px, 450%);
 }
 
+/* Social media text */
 footer h3 {
     color: var(--text);
     font-weight: var(--bold);
+    transform: translate(7%, 60%);
 }
 
+/* Social media section */
 footer section:last-of-type {
     float: right;
     transform: translateY(-42.5%);
     margin-right: 5%;
 }
 
+/* Social media list */
 footer section:last-of-type ul {
     margin: 0;
 }
 
-footer h3 {
-    transform: translate(7%, 60%);
-}
-
+/* Social media icons */
 footer img {
     width: 50px;
 }
 
+/* The list items in for the social media */
 footer section:last-of-type li {
     width: 60px;
 }

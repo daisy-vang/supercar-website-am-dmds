@@ -13,17 +13,24 @@ footer ul {
     list-style: none;
     margin: 0;
     padding: 20px 20px;
+
+    margin-left: 1%;
 }
 
 /* Styles sub-lists */
 footer ul li ul {
     padding: 10px 0;
+    margin: 0;
 }
 
 /* Floats all links to the left (similar to flex-start) */
 footer li {
     float: left;
-    width: 6%;
+    width: 100px;
+    text-align: left;
+}
+
+footer li.about {
     text-align: center;
 }
 
@@ -41,7 +48,7 @@ footer ul li ul li {
     /* All sub-links aren't floated */
     float: none;
 
-    text-align: center;
+    text-align: left;
     width: 100%;
 }
 
@@ -53,11 +60,44 @@ footer a {
     white-space: nowrap;
 }
 
+/* Highlights links in focus */
 footer a:hover,
 footer a:focus {
     color: var(--text-highlight);
 }
 
+/* The copyright text */
 footer p {
     color: var(--text);
+    font-weight: var(--normal);
+    font-size: 1em;
+
+    transform: translate(-100px, 450%);
+}
+
+footer h3 {
+    color: var(--text);
+    font-weight: var(--bold);
+}
+
+footer section:last-of-type {
+    float: right;
+    transform: translateY(-42.5%);
+    margin-right: 5%;
+}
+
+footer section:last-of-type ul {
+    margin: 0;
+}
+
+footer h3 {
+    transform: translate(7%, 60%);
+}
+
+footer img {
+    width: 50px;
+}
+
+footer section:last-of-type li {
+    width: 60px;
 }

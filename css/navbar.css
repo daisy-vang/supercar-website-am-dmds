@@ -36,7 +36,7 @@ nav li {
     background-color: var(--background);
 
     height: 100%;
-    width: 5%;
+    width: 100px;
 
     /* Float left is similar flex start */
     float: left;

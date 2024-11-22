@@ -1,8 +1,10 @@
 nav {
+    position: fixed;
     background-color: var(--background);
     border-bottom: 3px solid var(--main);
 
     height: 100px;
+    width: 100%;
 }
 
 /* Sets width of images */
@@ -134,4 +136,62 @@ nav .customize {
 nav .customize:hover,
 nav .customize:focus {
     background-color: var(--main-highlight);
+}
+
+nav .small-nav {
+    display: none;
+}
+
+nav .links {
+    position: fixed;
+
+    width: 100%;
+    height: calc(100vh - 100px);
+
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    transform: translateY(50.15vh);
+    transition: transform 0.3s ease-out;
+}
+
+nav .links a {
+    text-align: start;
+    font-weight: var(--bold);
+    font-size: 2em;
+    text-align: left;
+}
+
+nav .links a:hover,
+nav .links a:focus {
+    background-color: var(--background-highlight);
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav .large-nav {
+        display: none;
+    }
+
+    nav .small-nav {
+        display: block;
+    }
+
+    nav a {
+        padding: 15px 20px 0;
+        height: 100%;
+    }
+
+    nav a.icon {
+        padding-top: 10px;
+        height: calc(100% - 45px);
+    }
 }

@@ -11,9 +11,9 @@
 </head>
 <body>
     <nav role="navigation">
-        <ul>
+        <ul class="large-nav">
             <!-- The Home link is an image -->
-            <li class="logo"><a href="#"><img src="images/icons/trion_logo_transparent.png" alt="Trion Logo"></a></li>
+            <li class="logo"><a href="index.html"><img src="images/icons/trion_logo_transparent.png" alt="Trion Logo"></a></li>
             <li><a href="#">Merch</a></li>
             <li><a href="#">Models</a>
                 <ul class="sublist">
@@ -23,11 +23,23 @@
             </li>
             <li><a href="#">About</a></li>
         </ul>
-        <ul class="right">
+        <ul class="right large-nav">
             <li><a href="#"><img src="images/icons/cart_icon.png" alt="Cart" class="cart"></a></li>
             <li><a href="#"><img src="images/icons/user_icon.png" alt="Account"></a></li>
             <li><a href="#" class="customize">Customize</a></li>
         </ul>
+        <a href="index.html" class="small-nav"><img src="images/icons/trion_logo_transparent.png" alt="Trion Logo"></a>
+        <a href="javascript:void(0);" class="icon small-nav" onclick="reveal()">
+            <img src="images/icons/hamburger-menu.png" alt="menu">
+        </a>
+        <div class="links" id="links">
+            <a href="#">Merch</a>
+            <a href="#">Models</a>
+            <a href="#">About</a>
+            <a href="#">Customize</a>
+            <a href="#">Cart</a>
+            <a href="#">Account</a>
+        </div>
     </nav>
     <main></main>
     <footer>
@@ -53,5 +65,6 @@
         </section>
         <p>Copyright © Trion Supercars 2024</p>
     </footer>
+    <script src="js/navbar.js"></script>
 </body>
 </html>

@@ -6,6 +6,9 @@ footer {
     margin: 0;
 
     border-top: 3px solid var(--main);
+
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Styles the big list */
@@ -13,8 +16,6 @@ footer ul {
     list-style: none;
     margin: 0;
     padding: 20px 20px;
-
-    margin-left: 1%;
 }
 
 /* Styles sub-lists */
@@ -71,22 +72,31 @@ footer p {
     color: var(--text);
     font-weight: var(--normal);
     font-size: 1em;
+    padding-left: 20px;
+}
 
-    transform: translate(-100px, 450%);
+/* Holds the copyright and links together so you don't need a transform property */
+footer .links-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding-left: 1%;
+    width: 50%;
 }
 
 /* Social media text */
 footer h3 {
     color: var(--text);
     font-weight: var(--bold);
-    transform: translate(7%, 60%);
+
+    margin-left: 20px;
 }
 
 /* Social media section */
 footer section:last-of-type {
     float: right;
-    transform: translateY(-42.5%);
-    margin-right: 5%;
+    margin-right: 2%;
 }
 
 /* Social media list */

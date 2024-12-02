@@ -152,22 +152,34 @@ nav .links {
     flex-direction: column;
     justify-content: flex-start;
 
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(62, 62, 62, 0.7);
+    backdrop-filter: blur(2px);
 
     transform: translateY(50.15vh);
-    transition: transform 0.3s ease-out;
+    transition: transformX 0.3s ease-out;
 }
 
 nav .links a {
     text-align: start;
     font-weight: var(--bold);
-    font-size: 2em;
+    font-size: 3em;
     text-align: left;
+
+    padding: 0 50px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 nav .links a:hover,
 nav .links a:focus {
     background-color: var(--background-highlight);
+}
+
+@media screen and (min-width: 1024px) {
+    nav .links {
+        transform: translateX(100vw);
+    }
 }
 
 @media screen and (max-width: 1024px) {

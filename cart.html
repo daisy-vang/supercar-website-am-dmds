@@ -3,10 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cart.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/icons/trion_logo_transparent.png">
+    <title>cart</title>
 </head>
 <body>
-    
+    <nav role="navigation">
+        <ul class="large-nav">
+            <!-- The Home link is an image -->
+            <li class="logo"><a href="index.html"><img src="images/icons/trion_logo_transparent.png" alt="Trion Logo"></a></li>
+            <li><a href="merch.html">Merch</a></li>
+            <li><a href="models.html">Models</a>
+                <ul class="sublist">
+                    <li><a href="nemesis.html">Nemesis</a></li>
+                    <li><a href="black-widow.html">Black Widow</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <ul class="right large-nav">
+            <li><a href="cart.html"><img src="images/icons/cart_icon.png" alt="Cart" class="cart"></a></li>
+            <li><a href="account.html"><img src="images/icons/user_icon.png" alt="Account"></a></li>
+            <li><a href="config.html" class="customize">Customize</a></li>
+        </ul>
+        <a href="index.html" class="small-nav"><img src="images/icons/trion_logo_transparent.png" alt="Trion Logo"></a>
+        <a href="javascript:void(0);" class="icon small-nav" onclick="reveal()">
+            <img src="images/icons/hamburger-menu.png" alt="menu">
+        </a>
+        <div class="links" id="links">
+            <a href="merch.html">Merch</a>
+            <a href="models.html">Models</a>
+            <a href="about.html">About</a>
+            <a href="config.html">Customize</a>
+            <a href="cart.html">Cart</a>
+            <a href="account.html">Account</a>
+        </div>
+    </nav>
+
+    <main></main>
+
+    <footer>
+        <ul>
+            <li><a href="models.html">Models</a>
+                <ul>
+                    <li><a href="nemesis.html">Nemesis</a></li>
+                    <li><a href="black-widow.html">Black Widow</a></li>
+                </ul>
+            </li>
+            <li><a href="config.html">Customize</a></li>
+            <li class="about"><a href="about.html">About</a></li>
+            <li><a href="merch.html">Merch Store</a></li>
+        </ul>
+        <section>
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/richard.patterson.9041/" target="_blank"><img src="images/icons/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/trionsupercarsgroup/" target="_blank"><img src="images/icons/instagram.png" alt="Facebook"></a></li>
+                <li><a href="https://x.com/trionsupercars" target="_blank"><img src="images/icons/twitter.png" alt="Facebook"></a></li>
+                <li><a href="https://www.youtube.com/@trionsupercars2629/featured" target="_blank"><img src="images/icons/youtube.png" alt="Facebook"></a></li>
+            </ul>    
+        </section>
+        <p>Copyright © Trion Supercars 2024</p>
+    </footer>
+    <script src="js/navbar.js"></script>
+
 </body>
 </html>

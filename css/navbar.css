@@ -195,25 +195,30 @@ nav .links a:focus {
 }
 
 @media screen and (max-width: 1024px) {
+    /* The navbar uses flex instead of floats when small*/
     nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
+    /* Removes the large navbar */
     nav .large-nav {
         display: none;
     }
 
+    /* Displays the hamburger menu */
     nav .small-nav {
         display: block;
     }
 
+    /* The hamburger and logo need to be spaced differently at this size */
     nav a {
         padding: 15px 20px 0;
         height: 100%;
     }
 
+    /* The logo needs different padding at this size */
     nav a.icon {
         padding-top: 10px;
         height: calc(100% - 45px);

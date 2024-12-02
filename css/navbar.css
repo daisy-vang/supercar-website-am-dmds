@@ -162,13 +162,18 @@ nav .links {
 nav .links a {
     text-align: start;
     font-weight: var(--bold);
-    font-size: 3em;
+    font-size: 2em;
     text-align: left;
 
-    padding: 0 50px;
+    padding: 0 20px;
+    margin: 10px 0;
 
     display: flex;
     justify-content: space-between;
+}
+
+nav .links a:last-of-type {
+    margin-bottom: 50%;
 }
 
 nav .links a:hover,
@@ -176,6 +181,7 @@ nav .links a:focus {
     background-color: var(--background-highlight);
 }
 
+/* If the screen becomes wide while the menu is showing, this will hide the menu */
 @media screen and (min-width: 1024px) {
     nav .links {
         transform: translateX(100vw);

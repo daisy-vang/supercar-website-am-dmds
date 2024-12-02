@@ -133,15 +133,18 @@ nav .customize {
     transform: translateX(-60%);
 }
 
+/* the customize button when hovered over */
 nav .customize:hover,
 nav .customize:focus {
     background-color: var(--main-highlight);
 }
 
+/* This is the hamburger menu icon, it should be hidden by default */
 nav .small-nav {
     display: none;
 }
 
+/* This is the expanded hamburger menu */
 nav .links {
     position: fixed;
 
@@ -159,6 +162,7 @@ nav .links {
     transition: transformX 0.3s ease-out;
 }
 
+/* These are the links in the expanded hamburger menu */
 nav .links a {
     text-align: start;
     font-weight: var(--bold);
@@ -172,10 +176,12 @@ nav .links a {
     justify-content: space-between;
 }
 
+/* The last link needs padding on the bottom to look right */
 nav .links a:last-of-type {
     margin-bottom: 50%;
 }
 
+/* Link hovers */
 nav .links a:hover,
 nav .links a:focus {
     background-color: var(--background-highlight);

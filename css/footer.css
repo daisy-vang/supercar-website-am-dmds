@@ -1,0 +1,105 @@
+/* Styles the container */
+footer {
+    background-color: var(--background);
+    
+    height: 200px;
+    margin: 0;
+
+    border-top: 3px solid var(--main);
+}
+
+/* Styles the big list */
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px 20px;
+
+    margin-left: 1%;
+}
+
+/* Styles sub-lists */
+footer ul li ul {
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* Floats all links to the left (similar to flex-start) */
+footer li {
+    float: left;
+    width: 100px;
+    text-align: left;
+}
+
+footer li.about {
+    text-align: center;
+}
+
+/* First links are bolded */
+footer li a {
+    font-weight: var(--bold);
+}
+
+/* Sub-links are lighter-weight */
+footer li ul li a {
+    font-weight: var(--normal);
+}
+
+footer ul li ul li {
+    /* All sub-links aren't floated */
+    float: none;
+
+    text-align: left;
+    width: 100%;
+}
+
+/* Styles links */
+footer a {
+    text-decoration: none;
+    color: var(--text);
+
+    white-space: nowrap;
+}
+
+/* Highlights links in focus */
+footer a:hover,
+footer a:focus {
+    color: var(--text-highlight);
+}
+
+/* The copyright text */
+footer p {
+    color: var(--text);
+    font-weight: var(--normal);
+    font-size: 1em;
+
+    transform: translate(-100px, 450%);
+}
+
+/* Social media text */
+footer h3 {
+    color: var(--text);
+    font-weight: var(--bold);
+    transform: translate(7%, 60%);
+}
+
+/* Social media section */
+footer section:last-of-type {
+    float: right;
+    transform: translateY(-42.5%);
+    margin-right: 5%;
+}
+
+/* Social media list */
+footer section:last-of-type ul {
+    margin: 0;
+}
+
+/* Social media icons */
+footer img {
+    width: 50px;
+}
+
+/* The list items in for the social media */
+footer section:last-of-type li {
+    width: 60px;
+}

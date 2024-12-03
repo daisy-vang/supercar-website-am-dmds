@@ -1,5 +1,5 @@
 main {
-    height: 100vh;
+    margin-top: 100px;
 }
 
 header section {
@@ -11,6 +11,11 @@ header section {
     height: 700px;
 }
 
+header h1 {
+    font-size: 4em;
+    text-shadow: 5px 3px black;
+}
+
 header section.nemesis {
     background-image: url(/images/header.jpg);
     background-size: cover;
@@ -18,10 +23,18 @@ header section.nemesis {
 }
 
 header section a {
-    padding: 10px;
+    padding: 10px 30px;
 
-    background-color: red;
+    background-color: var(--main);
+    border: 3px solid var(--main-border);
+    border-radius: 5px;
 
     text-decoration: none;
+    font-size: 1.25em;
     color: var(--text);
+}
+
+header section a:hover,
+header section a:focus {
+    background-color: var(--main-highlight);
 }

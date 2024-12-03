@@ -26,6 +26,11 @@ body {
     margin: 0;
 }
 
+main {
+    /* The navbar is 100px tall so we need to account for that taken space */
+    margin-top: 100px;
+}
+
 nav {
     position: fixed;
     background-color: var(--background);
@@ -33,6 +38,9 @@ nav {
 
     height: 100px;
     width: 100%;
+
+    /* The margin we put on the main affects the navbar, we need to move it to the top of the screen */
+    transform: translateY(-100%);
 }
 
 /* Sets width of images */

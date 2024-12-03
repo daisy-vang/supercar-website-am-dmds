@@ -7,32 +7,28 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="images/icons/trion_logo_transparent.png">
-    <title>Home | TRION</title>
+    <title>nemesis</title>
 </head>
 <body>
     <nav role="navigation">
-        <!-- List of links -->
         <ul class="large-nav">
             <!-- The Home link is an image -->
             <li class="logo"><a href="index.html"><img src="images/icons/trion_logo_transparent.png" alt="Trion Logo"></a></li>
-            <li><a href="html/merch.html">Merch</a></li>
-            <li><a href="html/models.html">Models</a>
+            <li><a href="merch.html">Merch</a></li>
+            <li><a href="models.html">Models</a>
                 <ul class="sublist">
-                    <li><a href="#">Nemesis</a></li>
-                    <li><a href="#">Black Widow</a></li>
+                    <li><a href="nemesis.html">Nemesis</a></li>
+                    <li><a href="black-widow.html">Black Widow</a></li>
                 </ul>
             </li>
-            <li><a href="html/about.html">About</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
-        <!-- This is a seperate list because these links are floated to the right -->
         <ul class="right large-nav">
-            <li><a href="html/cart.html"><img src="images/icons/cart_icon.png" alt="Cart" class="cart"></a></li>
-            <li><a href="html/account.html"><img src="images/icons/user_icon.png" alt="Account"></a></li>
-            <li><a href="html/config.html" class="customize">Customize</a></li>
+            <li><a href="cart.html"><img src="images/icons/cart_icon.png" alt="Cart" class="cart"></a></li>
+            <li><a href="account.html"><img src="images/icons/user_icon.png" alt="Account"></a></li>
+            <li><a href="config.html" class="customize">Customize</a></li>
         </ul>
-        <!-- This is the hamburger menu icon -->
         <a href="index.html" class="small-nav"><img src="images/icons/trion_logo_transparent.png" alt="Trion Logo"></a>
-        <!-- This links to the navbar.js file when the menu is clicked, this revels the menu -->
         <a href="javascript:void(0);" class="icon small-nav" onclick="reveal()">
             <img src="images/icons/hamburger-menu.png" alt="menu">
         </a>
@@ -45,31 +41,21 @@
             <a href="account.html">Account<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
         </div>
     </nav>
-    <main>
-        <header>
-            <section class="header nemesis">
-                <h1>Trion Nemesis</h1>
-                <a href="html/nemesis.html">Unleash the Nemesis</a>
-            </section>
-        </header>
-    </main>
+
+    <main></main>
+
     <footer>
-        <!-- This div is here to use flexbox to position these items -->
-        <div class="links-copyright">
-            <ul>
-                <li><a href="html/models.html">Models</a>
-                    <ul>
-                        <li><a href="#">Nemesis</a></li>
-                        <li><a href="#">Black Widow</a></li>
-                    </ul>
-                </li>
-                <li><a href="html/config.html">Customize</a></li>
-                <li class="about"><a href="html/about.html">About</a></li>
-                <li><a href="html/merch.html">Merch Store</a></li>
-            </ul>
-            <p>Copyright © Trion Supercars 2024</p>
-        </div>
-        <!-- This is seperate because its positioned to the right of the above items -->
+        <ul>
+            <li><a href="models.html">Models</a>
+                <ul>
+                    <li><a href="nemesis.html">Nemesis</a></li>
+                    <li><a href="black-widow.html">Black Widow</a></li>
+                </ul>
+            </li>
+            <li><a href="config.html">Customize</a></li>
+            <li class="about"><a href="about.html">About</a></li>
+            <li><a href="merch.html">Merch Store</a></li>
+        </ul>
         <section>
             <h3>Social Media</h3>
             <ul>
@@ -79,8 +65,9 @@
                 <li><a href="https://www.youtube.com/@trionsupercars2629/featured" target="_blank"><img src="images/icons/youtube.png" alt="Facebook"></a></li>
             </ul>    
         </section>
+        <p>Copyright © Trion Supercars 2024</p>
     </footer>
-    <!-- This links to the navbar.js file -->
     <script src="js/navbar.js"></script>
+
 </body>
 </html>

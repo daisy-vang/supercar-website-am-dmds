@@ -1,3 +1,11 @@
+header {
+    position: relative;
+    height: 700px;
+
+    border-bottom: 3px solid var(--main);
+    margin-bottom: 200px;
+}
+
 header section {
     display: flex;
     flex-direction: column;
@@ -5,9 +13,16 @@ header section {
     align-items: center;
 
     height: 700px;
+    width: 100vw;
 
     background-size: cover;
-    background-position: center;
+
+    position: absolute;
+
+    transition: all 1.5s ease-in-out;
+    transform: translateX(100%);
+
+    z-index: 0;
 }
 
 header h1 {
@@ -17,6 +32,24 @@ header h1 {
 
 header section.nemesis {
     background-image: url(/images/header.jpg);
+    background-position: center;
+}
+
+header section.store {
+    background-image: url(/images/store-preview.jpg);
+    background-position: top;
+}
+
+header section.config {
+    background-color: black;
+}
+
+header section.about {
+    background-color: black;
+}
+
+header section.black-widow {
+    background-color: black;
 }
 
 /* I did not make any of this button code, look at example 57 on https://getcssscan.com/css-buttons-examples */

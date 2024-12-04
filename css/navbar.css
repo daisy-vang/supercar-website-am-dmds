@@ -41,6 +41,8 @@ nav {
 
     /* The margin we put on the main affects the navbar, we need to move it to the top of the screen */
     transform: translateY(-100%);
+
+    z-index: 20;
 }
 
 /* Sets width of images */

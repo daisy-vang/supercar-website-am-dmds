@@ -1,3 +1,15 @@
+body {
+  overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    height: 700px;
+
+    border-bottom: 3px solid var(--main);
+    margin-bottom: 200px;
+}
+
 header section {
     display: flex;
     flex-direction: column;
@@ -5,18 +17,54 @@ header section {
     align-items: center;
 
     height: 700px;
+    width: 100vw;
 
     background-size: cover;
-    background-position: center;
+
+    position: absolute;
+
+    transition: all 1.5s ease-in-out;
+    transform: translateX(100%);
+
+    z-index: 0;
 }
 
 header h1 {
     font-size: 4em;
     text-shadow: 5px 3px black;
+
+    z-index: 1;
+}
+
+header section:last-of-type {
+    transform: translateX(-100%);
+}
+
+header section:first-of-type {
+    transform: translateX(0);
 }
 
 header section.nemesis {
     background-image: url(/images/header.jpg);
+    background-position: center;
+}
+
+header section.store {
+    background-image: url(/images/store-preview.jpg);
+    background-position: top;
+}
+
+/* These are defined so that we can add images to them later */
+header section.config {
+    background-color: black;
+}
+
+header section.about {
+    background-color: black;
+}
+
+header section.black-widow {
+    background-color: black;
 }
 
 /* I did not make any of this button code, look at example 57 on https://getcssscan.com/css-buttons-examples */
@@ -84,4 +132,29 @@ header section.nemesis {
   font-family: 'Poppins', sans-serif;
   opacity: 1;
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+/* These are the arrow buttons */
+header button.arrow-button {
+  background-color: transparent;
+  border: none;
+  position: relative;
+
+  margin: 15% 10px 0;
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+header button.button-left {
+  float: left;
+}
+
+header button.button-right {
+  float: right;
+}
+
+/* Change color when hovering over arrow */
+header button.arrow-button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }

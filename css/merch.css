@@ -1,11 +1,38 @@
-* {
+  .centered {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    text-shadow: 5px 3px black;
+    font-weight: var(--bold);
+  }
+  .Wow{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    text-shadow: 5px 3px black;
+    font-weight: var(--bold);
+  }
+  .Bam{
+    position: absolute;
+    top: 111%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    text-shadow: 5px 3px black;
+    font-weight: var(--bold);
+  }
+  * {
     box-sizing: border-box;
   }
   
   .column {
     float: left;
-    width: 30%;
-    padding: 5px;
+    width: 25%;
+    padding: 3px;
   }
   
   /* Clearfix (clear floats) */
@@ -13,4 +40,10 @@
     content: "";
     clear: both;
     display: table;
+  }
+  h1{
+    text-align: center;
+  }
+  h2{ 
+    margin-left: 50px;
   }

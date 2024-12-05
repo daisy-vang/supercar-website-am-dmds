@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 header {
     position: relative;
     height: 700px;
@@ -28,6 +32,16 @@ header section {
 header h1 {
     font-size: 4em;
     text-shadow: 5px 3px black;
+
+    z-index: 1;
+}
+
+header section:last-of-type {
+    transform: translateX(-100%);
+}
+
+header section:first-of-type {
+    transform: translateX(0);
 }
 
 header section.nemesis {
@@ -40,6 +54,7 @@ header section.store {
     background-position: top;
 }
 
+/* These are defined so that we can add images to them later */
 header section.config {
     background-color: black;
 }
@@ -117,4 +132,29 @@ header section.black-widow {
   font-family: 'Poppins', sans-serif;
   opacity: 1;
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+/* These are the arrow buttons */
+header button.arrow-button {
+  background-color: transparent;
+  border: none;
+  position: relative;
+
+  margin: 15% 10px 0;
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+header button.button-left {
+  float: left;
+}
+
+header button.button-right {
+  float: right;
+}
+
+/* Change color when hovering over arrow */
+header button.arrow-button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }

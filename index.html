@@ -26,7 +26,7 @@
         </ul>
         <!-- This is a seperate list because these links are floated to the right -->
         <ul class="right large-nav">
-            <li><a href="cart.html"><img src="images/icons/cart_icon.png" alt="Cart" class="cart"></a></li>
+            <li><a href="html/cart.html"><img src="images/icons/cart_icon.png" alt="Cart" class="cart"></a></li>
             <li><a href="account.html"><img src="images/icons/user_icon.png" alt="Account"></a></li>
             <li><a href="config.html" class="customize">Customize</a></li>
         </ul>
@@ -48,13 +48,13 @@
     <main>
         <header>
             <!-- Each of these sections is one slide in the carousel -->
-            <section class="header nemesis">
+            <section class="header nemesis active">
                 <h1>Unleash the Nemesis</h1>
                 <button class="button-1" role="button" onclick="location.href='html/nemesis.html';"><span class="text">Trion Nemesis</span><span>Trion Nemesis</span></button>
             </section>
             <section class="header store">
                 <h1>Trion Store</h1>
-                <button class="button-1" role="button" onclick="location.href='html/store.html';"><span class="text">Shop</span><span>Shop</span></button>
+                <button class="button-1" role="button" onclick="location.href='html/merch.html';"><span class="text">Shop</span><span>Shop</span></button>
             </section>
             <section class="header config">
                 <h1>Be in Charge of your Future</h1>
@@ -68,6 +68,8 @@
                 <h1>Discover the Black Widow</h1>
                 <button class="button-1" role="button" onclick="location.href='html/black-widow.html';"><span class="text">Black Widow</span><span>Black Widow</span></button>
             </section>
+            <button class="arrow-button button-left" onclick="plusSlides(-1)"><img src="images/icons/left-arrow-black.svg" alt="left arrow" width="30px"></button>
+            <button class="arrow-button button-right" onclick="plusSlides(1)"><img src="images/icons/right-arrow-black.svg" alt="right arrow" width="30px"></button>
         </header>
     </main>
     <footer>

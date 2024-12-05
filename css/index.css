@@ -54,17 +54,19 @@ header section.store {
     background-position: top;
 }
 
-/* These are defined so that we can add images to them later */
 header section.config {
-    background-color: black;
+    background-image: url(/images/configure-hero-image.jpg);
+    background-position: 50% 70%;
 }
 
 header section.about {
-    background-color: black;
+    background-image: url(/images/about-us-hero-image.jpg);
+    background-position: bottom;
 }
 
 header section.black-widow {
-    background-color: black;
+    background-image: url(/images/black-widow-hero-image.jpg);
+    background-position: center;
 }
 
 /* I did not make any of this button code, look at example 57 on https://getcssscan.com/css-buttons-examples */

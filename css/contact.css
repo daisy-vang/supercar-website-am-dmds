@@ -1,4 +1,3 @@
-/*
 * {
     box-sizing: border-box;
 }
@@ -32,4 +31,14 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
-  */
+ /* Notes
+ the phone number section needs dropdown that has the area code for the numbers
+ +1 US
+ +44 UK
+ +7 RU
+ +61 AU
+ +39 IT
+
+ when hovered over this will be the color #E7E7E7
+
+ */

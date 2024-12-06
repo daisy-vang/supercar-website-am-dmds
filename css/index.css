@@ -7,7 +7,6 @@ header {
     height: 700px;
 
     border-bottom: 3px solid var(--main);
-    margin-bottom: 200px;
 }
 
 header section {
@@ -159,4 +158,127 @@ header button.button-right {
 /* Change color when hovering over arrow */
 header button.arrow-button:hover {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+div.cars {
+  margin-top: 100px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+div.cars section {
+  width: 40%;
+}
+
+div.cars section img {
+  width: 100%;
+  height: 70%;
+
+  border: 2px solid var(--main);
+}
+
+div.cars section h2 {
+  font-size: 2em;
+}
+
+div.cars p {
+  font-size: 1.25em;
+}
+
+aside {
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-top: 2px solid var(--main);
+  border-bottom: 2px solid var(--main);
+
+  height: 200px;
+  background-image: url(/images/nemesis-interior.jpg);
+
+  margin-top: 2.5%;
+}
+
+aside h2 {
+  font-size: 2em;
+
+  text-shadow: 2px 2px black;
+  margin-bottom: 1%;
+}
+
+aside p {
+  width: 70%;
+}
+
+div.not-cars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  height: 500px;
+  margin: 50px 100px 0;
+}
+
+div.not-cars section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  width: 50%;
+  height: 100%;
+
+  margin-left: 70px;
+}
+
+div.not-cars h2 {
+  font-size: 2em;
+}
+
+div.not-cars p {
+  font-size: 1.25em;
+}
+
+div.not-cars button {
+  margin-top: 11%;
+}
+
+div.merch-image {
+  background-image: url(/images/merch/polo_1.jpg);
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+div.about-us-image {
+  background-image: url(/images/about-us-image.jpg);
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+main div:last-of-type {
+  flex-direction: row-reverse;
+}
+
+main div:last-of-type section {
+  margin-left: 0;
+}
+
+main div:last-of-type div {
+  margin-left: 70px;
+}
+
+main div:last-of-type button {
+  margin-top: 17.6%;
+}
+
+main {
+  margin-bottom: 100px;
 }

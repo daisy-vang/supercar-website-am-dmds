@@ -1,14 +1,14 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h1 {
+h1{
     text-align: center;
 }
 
-.menu-open {
+.menu-open{
     position: fixed;
     top: 1rem;
     left: 1rem;
@@ -17,7 +17,7 @@ h1 {
     cursor: pointer;
 }
 
-.menu-open span {
+.menu-open span{
     display: flex;
     width: 20px;
     height: 2px;
@@ -25,25 +25,27 @@ h1 {
     margin-top: 3px;
 }
 
-.nav {
+.nav{
     position: fixed;
     top: 0;
     left: -40%;
     width: 40%;
     height: 100vh;
     background-color: #000000;
+    transition: 0.5s;
 }
 
-.nav.active {
+.nav.active{
     position: fixed;
     top: 0;
     left: 0;
     width: 40%;
     height: 100vh;
     background-color: #000000;
+    transition: 0.5s;
 }
 
-.nav ul {
+.nav ul{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -51,16 +53,16 @@ h1 {
     text-align: center;
 }
 
-.nav ul li {
+.nav ul li{
     margin-top: 2rem;
 }
 
-.nav ul li a {
+.nav ul li a{
     color: black;
     text-decoration: none;
 }
 
-.menu-close {
+.menu-close{
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -69,21 +71,21 @@ h1 {
     cursor: pointer;
 }
 
-.menu-close span {
+.menu-close span{
     display: flex;
     width: 20px;
     height: 2px;
     background: black;
 }
 
-.menu-close :nth-child(1) {
+.menu-close :nth-child(1){
     position: absolute;
     left: -2px;
     top: 7px;
     transform: rotate(45deg);
 }
 
-.menu-close :nth-child(2) {
+.menu-close :nth-child(2){
     position: absolute;
     left: -2px;
     top: 7px;

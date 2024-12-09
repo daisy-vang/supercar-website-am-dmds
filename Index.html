@@ -10,7 +10,7 @@
     <title>Home | TRION</title>
 </head>
 <body>
-    <nav role="navigation">
+    <nav>
         <!-- List of links -->
         <ul class="large-nav">
             <!-- The Home link is an image -->
@@ -37,12 +37,12 @@
             <img src="images/icons/hamburger-menu.png" alt="menu">
         </a>
         <div class="links" id="links">
-            <a href="merch.html">Merch<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
-            <a href="models.html">Models<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
-            <a href="about.html">About<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
-            <a href="config.html">Customize<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
-            <a href="cart.html">Cart<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
-            <a href="account.html">Account<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
+            <a href="merch.html">Merch<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
+            <a href="models.html">Models<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
+            <a href="about.html">About<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
+            <a href="config.html">Customize<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
+            <a href="cart.html">Cart<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
+            <a href="account.html">Account<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
         </div>
     </nav>
     <main>
@@ -50,27 +50,62 @@
             <!-- Each of these sections is one slide in the carousel -->
             <section class="header nemesis active">
                 <h1>Unleash the Nemesis</h1>
-                <button class="button-1" role="button" onclick="location.href='html/nemesis.html';"><span class="text">Trion Nemesis</span><span>Trion Nemesis</span></button>
+                <button class="button-1" onclick="location.href='html/nemesis.html';"><span class="text">Trion Nemesis</span><span>Trion Nemesis</span></button>
             </section>
             <section class="header store">
                 <h1>Trion Store</h1>
-                <button class="button-1" role="button" onclick="location.href='html/merch.html';"><span class="text">Shop</span><span>Shop</span></button>
+                <button class="button-1" onclick="location.href='html/merch.html';"><span class="text">Shop</span><span>Shop</span></button>
             </section>
             <section class="header config">
                 <h1>Be in Charge of your Future</h1>
-                <button class="button-1" role="button" onclick="location.href='html/about.html';"><span class="text">Customize</span><span>Customize</span></button>
+                <button class="button-1" onclick="location.href='html/about.html';"><span class="text">Customize</span><span>Customize</span></button>
             </section>
             <section class="header about">
                 <h1>Meet the Trion Team</h1>
-                <button class="button-1" role="button" onclick="location.href='html/config.html';"><span class="text">About Us</span><span>About Us</span></button>
+                <button class="button-1" onclick="location.href='html/config.html';"><span class="text">About Us</span><span>About Us</span></button>
             </section>
             <section class="header black-widow">
                 <h1>Discover the Black Widow</h1>
-                <button class="button-1" role="button" onclick="location.href='html/black-widow.html';"><span class="text">Black Widow</span><span>Black Widow</span></button>
+                <button class="button-1" onclick="location.href='html/black-widow.html';"><span class="text">Black Widow</span><span>Black Widow</span></button>
             </section>
-            <button class="arrow-button button-left" onclick="plusSlides(-1)"><img src="images/icons/left-arrow-black.svg" alt="left arrow" width="30px"></button>
-            <button class="arrow-button button-right" onclick="plusSlides(1)"><img src="images/icons/right-arrow-black.svg" alt="right arrow" width="30px"></button>
+            <!-- Those onClick attributes link to slidwshow.js and move the slides -->
+            <button class="arrow-button button-left" onclick="plusSlides(-1)"><img src="images/icons/left-arrow-black.svg" alt="left arrow" width="30"></button>
+            <button class="arrow-button button-right" onclick="plusSlides(1)"><img src="images/icons/right-arrow-black.svg" alt="right arrow" width="30"></button>
         </header>
+        <div class="cars">
+            <section class="nemesis-section">
+                <img src="images/nemesis.png" alt="Nemesis GT">
+                <h2>Nemesis GT</h2>
+                <p>Discover new adventures with the Nemesis GT</p>
+                <button class="button-1" onclick="location.href = 'html/nemesis.html'">View More<span>View More</span></button>
+            </section>
+            <section class="black-widow-section">
+                <img src="images/black-widow.png" alt="Black Widow">
+                <h2>Black Widow</h2>
+                <p>Discover new adventures with the black widow</p>
+                <button class="button-1" onclick="location.href = 'html/black-widow.html'">View More<span>View More</span></button>
+            </section>
+        </div>
+        <aside>
+            <h2>Welcome to Trion</h2>
+            <p>At Trion Motors, we don’t just build supercars; we build an experience. Our vision goes beyond the vehicle, it’s about creating a community of passionate individuals who share a love for innovation, performance, and luxury</p>
+        </aside>
+        <div class="not-cars">
+            <div class="merch-image"></div>
+            <section>
+                <h2>Merchandise</h2>
+                <p>Step into the world of luxury, performance, and innovation. Here, you’ll find exclusive apparel, accessories, and gear that embody the spirit of Trion where power, precision, and passion meet. Whether you’re a car enthusiast or a Trion driver, our collection is designed to bring the thrill of the road to your everyday life. <br> <br> Browse our curated selection and take a piece of Trion with you, wherever you go. Welcome to the drive of a lifetime!</p>
+                <button class="button-1" onclick="location.href = 'html/merch.html'">Discover More<span>Discover More</span></button>
+            </section>
+        </div>
+        <div class="not-cars">
+            <div class="about-us-image"></div>
+            <section>
+                <h2>About Us</h2>
+                <p>At Trion, we don’t just build supercars—we craft automotive masterpieces that redefine the driving experience. With a relentless pursuit of performance, innovation, and design, we push the boundaries of what’s possible on the road. Every Trion vehicle is engineered to deliver unmatched power, precision, and luxury, all while maintaining a commitment to sustainability and cutting-edge technology.</p>
+                <button class="button-1" onclick="location.href = 'html/about.html'">Discover More<span>Discover More</span></button>
+            </section>
+        </div>
     </main>
     <footer>
         <!-- This div is here to use flexbox to position these items -->

@@ -35,11 +35,11 @@
         </a>
         <div class="links" id="links">
             <a href="#">Merch<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
-            <a href="#">Models<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
-            <a href="#">About<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
-            <a href="#">Customize<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
-            <a href="#">Cart<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
-            <a href="#">Account<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
+            <a href="#">Models<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
+            <a href="#">About<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
+            <a href="#">Customize<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
+            <a href="#">Cart<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
+            <a href="#">Account<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
         </div>
     </nav>    
     <main class="row">   
@@ -58,14 +58,32 @@
           <img src="/images/Merch/Suit.jpg" alt="Women" style="width:100%">
     </div>
     </header>
-
-        <h2><u>Top Sellers</u></h2>
-   
-
-        <!-- Schroader make carousel clickable and minimal for Merch --> 
-
-
-
+      <section>
+        <div>
+          <h2>Best Sellers</h2>
+          <div>
+            <button onclick="moveLeft()"></button>
+            <button onclick="moveRight()"></button>
+          </div>
+        </div>
+        <div id="carousel">
+          <section class="product" id="men-polo" onclick="location.href='this thang.html'">
+            <h3>Men's Polo</h3>
+          </section>
+          <section class="product" id="sweater" onclick="location.href='this thang.html'">
+            <h3>Trion Sweater</h3>
+          </section>
+          <section class="product" id="beanie" onclick="location.href='this thang.html'">
+            <h3>Trion Beanie</h3>
+          </section>
+          <section class="product" id="shirt" onclick="location.href='this thang.html'">
+            <h3>Trion Shirt</h3>
+          </section>
+          <section class="product" id="super-shirt" onclick="location.href='this thang.html'">
+            <h3>Trion SuperShirt</h3>
+          </section>
+        </div>
+      </section>
             <img src="/images/icons/Banner.jpg" alt="Margin" style="width:100%;">
             <div class="Wow">Shop the Trion Look</div>
             <div class="Bam"> Trion look creates a community of high class and like minded individuals who share not only clothes, but an experience
@@ -133,6 +151,6 @@
         </section>
     </footer>
     <script src="/js/navbar.js"></script>
-    <script src="/js/Merch.js"></script>
+    <script src="/js/merch.js"></script>
 </body>
 </html>

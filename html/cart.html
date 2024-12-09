@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-<<<<<<< Updated upstream
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/index.css">
-=======
+
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/index.css">
->>>>>>> 0b97d5a5482e13755ca6f595282495657e3c75e1
-    <link rel="icon" href="images/icons/trion_logo_transparent.png">
+    <link rel="stylesheet" href="/css/cart.css">
+
+    <link rel="icon" href="/images/icons/trion_logo_transparent.png">
     <title>cart</title>
 </head>
 <body>
     <nav role="navigation">
         <ul class="large-nav">
             <!-- The Home link is an image -->
-            <li class="logo"><a href="index.html"><img src="images/icons/trion_logo_transparent.png" alt="Trion Logo"></a></li>
+            <li class="logo"><a href="index.html"><img src="/images/icons/trion_logo_transparent.png" alt="Trion Logo"></a></li>
             <li><a href="merch.html">Merch</a></li>
             <li><a href="models.html">Models</a>
                 <ul class="sublist">
@@ -31,8 +29,8 @@
             <li><a href="about.html">About</a></li>
         </ul>
         <ul class="right large-nav">
-            <li><a href="cart.html"><img src="images/icons/cart_icon.png" alt="Cart" class="cart"></a></li>
-            <li><a href="account.html"><img src="images/icons/user_icon.png" alt="Account"></a></li>
+            <li><a href="cart.html"><img src="/images/icons/cart_icon.png" alt="Cart" class="cart"></a></li>
+            <li><a href="account.html"><img src="/images/icons/user_icon.png" alt="Account"></a></li>
             <li><a href="config.html" class="customize">Customize</a></li>
         </ul>
         <a href="index.html" class="small-nav"><img src="images/icons/trion_logo_transparent.png" alt="Trion Logo"></a>
@@ -48,40 +46,166 @@
             <a href="account.html">Account<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
         </div>
     </nav>
+  
+    <main>  
+    <h1><u>Checkout</u></h1>
+<div class="images">
+    <img src="/images/Merch/polo_1.jpg" style="width: 15em;">
+ <div class="container">
 
-    <main></main>
+        <form action="#">
 
-    <footer>
-        <ul>
-            <li><a href="models.html">Models</a>
-                <ul>
-                    <li><a href="nemesis.html">Nemesis</a></li>
-                    <li><a href="black-widow.html">Black Widow</a></li>
-                </ul>
-            </li>
-            <li><a href="config.html">Customize</a></li>
-            <li class="about"><a href="about.html">About</a></li>
-            <li><a href="merch.html">Merch Store</a></li>
-        </ul>
-        <section>
-            <h3>Social Media</h3>
-            <ul>
-                <li><a href="https://www.facebook.com/richard.patterson.9041/" target="_blank"><img src="images/icons/facebook.png" alt="Facebook"></a></li>
-                <li><a href="https://www.instagram.com/trionsupercarsgroup/" target="_blank"><img src="images/icons/instagram.png" alt="Facebook"></a></li>
-                <li><a href="https://x.com/trionsupercars" target="_blank"><img src="images/icons/twitter.png" alt="Facebook"></a></li>
-                <li><a href="https://www.youtube.com/@trionsupercars2629/featured" target="_blank"><img src="images/icons/youtube.png" alt="Facebook"></a></li>
-            </ul>    
-        </section>
-        <p>Copyright © Trion Supercars 2024</p>
-    </footer>
-    <script src="js/navbar.js"></script>
+            <div class="row">
 
-=======
-    <link rel="stylesheet" href="css/cart.css">
-    <title>Document</title>
+                <div class="col">
+                    <h3 class="title">
+                        Billing Address
+                    </h3>
+
+                    <div class="inputBox">
+                        <label for="name">
+                              Full Name:
+                          </label>
+                        <input type="text" id="name" 
+                               placeholder="Enter your full name" 
+                               required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="email">
+                              Email:
+                          </label>
+                        <input type="text" id="email" 
+                               placeholder="Enter email address" 
+                               required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="address">
+                              Address:
+                          </label>
+                        <input type="text" id="address" 
+                               placeholder="Enter address" 
+                               required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="city">
+                              City:
+                          </label>
+                        <input type="text" id="city" 
+                               placeholder="Enter city" 
+                               required>
+                    </div>
+
+                    <div class="flex">
+
+                        <div class="inputBox">
+                            <label for="state">
+                                  State:
+                              </label>
+                            <input type="text" id="state" 
+                                   placeholder="Enter state" 
+                                   required>
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="zip">
+                                  Zip Code:
+                              </label>
+                            <input type="number" id="zip" 
+                                   placeholder="Zip Code" 
+                                   required>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col">
+                    <h3 class="title">Payment</h3>
+
+                    <div class="inputBox">
+                        <label for="name">
+                              Card Accepted:
+                          </label>
+                        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20240715140014/Online-Payment-Project.webp" 
+                             alt="credit/debit card image">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="cardName">
+                              Name On Card:
+                          </label>
+                        <input type="text" id="cardName" 
+                               placeholder="Enter card name" 
+                               required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="cardNum">
+                              Credit Card Number:
+                          </label>
+                        <input type="text" id="cardNum" 
+                               placeholder="Card Number" 
+                               maxlength="19" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="">Exp Month:</label>
+                        <select name="" id="">
+                            <option value="">Choose month</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </div>
+
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="">Exp Year:</label>
+                            <select name="" id="">
+                                <option value="">Choose Year</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                            </select>
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="cvv">CVV</label>
+                            <input type="number" id="cvv" 
+                                   placeholder="CVV" required>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <input type="submit" value="Proceed to Checkout" 
+                   class="submit_btn">
+        </form>
+    </div>
+    <script type="text/javascript" src="/js/Cart.js"></script>
+</body>
+
+</html>
+    </main>
+
 </head>
 <body>
-    
->>>>>>> Stashed changes
 </body>
 </html>

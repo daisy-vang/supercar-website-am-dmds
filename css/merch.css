@@ -84,6 +84,9 @@
     color: rgb(255, 255, 255);
     transform: rotateY(180deg);
   }
+  h1:hover{
+    color: red;
+  }
   .container {
     position: relative;
     text-align: center;
@@ -93,4 +96,9 @@
     position: absolute;
     bottom: 8px;
     right: 16px;
+    font-size: 2em;
+    background-color:black ;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(255, 0, 0);
   }

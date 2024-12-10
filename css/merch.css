@@ -1,4 +1,4 @@
-  .centered {
+  /* .centered {
     position: absolute;
     top: 45%;
     left: 50%;
@@ -25,11 +25,70 @@
     font-size: 1.5em;
     text-shadow: 5px 3px black;
     font-weight: var(--bold);
-  }
+  } */
   * {
     box-sizing: border-box;
   }
-  
+
+  h2 {
+    width: 1000px;
+    margin: 0;
+
+    font-size: 3em;
+  }
+
+  #carousel {
+    display: flex;
+    justify-content: flex-start;
+
+    width: 200vw;
+    margin-left: 30px;
+  }
+
+  .product {
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 500px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  #men-polo {
+    background-image: url(/images/merch/polo_1.jpg);
+  }
+
+  #sweater {
+    background-image: url(/images/merch/Trion-Sweater.jpg);
+  }
+
+  #beanie {
+    background-image: url(/images/merch/Trion-Beanie.png);
+  }
+
+  #shirt {
+    background-image: url(/images/merch/Trion-Shirt.jpg);
+  }
+
+  #super-shirt {
+    background-image: url(/images/store-preview.jpg);
+  }
+
+  h3 {
+    text-align: end;
+
+    text-shadow: 3px 3px black;
+    font-size: 1.75em;
+    margin: 10px;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+
   .column {
     float: left;
     width: 25%;
@@ -84,6 +143,9 @@
     color: rgb(255, 255, 255);
     transform: rotateY(180deg);
   }
+  h1:hover{
+    color: red;
+  }
   .container {
     position: relative;
     text-align: center;
@@ -93,4 +155,9 @@
     position: absolute;
     bottom: 8px;
     right: 16px;
+    font-size: 2em;
+    background-color:black ;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(255, 0, 0);
   }

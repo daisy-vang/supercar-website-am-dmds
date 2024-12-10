@@ -8,3 +8,4 @@ Schroeder:
     - Use variables for colors (variables are in navbar.css, see navbar.css for examples too)
     - Put html in the html folder and css in the css folder
     - Use comments on your work (don't just explain what a line of code does, explain why you did it that way)
+    - Try to avoid solutions using transform: translate, it can break the hamburger menu

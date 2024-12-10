@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <nav role="navigation">
+    <nav>
         <ul class="large-nav">
             <!-- The Home link is an image -->
             <li class="logo"><a href="../index.html"><img src="/images/icons/trion_logo_transparent.png" alt="Trion Logo"></a></li>
@@ -34,12 +34,12 @@
             <img src="/images/icons/hamburger-menu.png" alt="menu">
         </a>
         <div class="links" id="links">
-            <a href="#">Merch<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
-            <a href="#">Models<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
-            <a href="#">About<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
-            <a href="#">Customize<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
-            <a href="#">Cart<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
-            <a href="#">Account<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
+            <a href="#">Merch<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
+            <a href="#">Models<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
+            <a href="#">About<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
+            <a href="#">Customize<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
+            <a href="#">Cart<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
+            <a href="#">Account<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
         </div>
     </nav>    
     <main class="row">   
@@ -62,8 +62,8 @@
         <div>
           <h2>Best Sellers</h2>
           <div>
-            <button onclick="moveLeft()"></button>
-            <button onclick="moveRight()"></button>
+            <button id="button-left" onclick="moveCarousel(540)"><img src="/images/icons/circle-arrow-left.svg" alt="left arrow" width="50"></button>
+            <button id="button-right" class="active" onclick="moveCarousel(-540)"><img src="/images/icons/circle-arrow-right.svg" alt="right arrow" width="50"></button>
           </div>
         </div>
         <div id="carousel">
@@ -84,15 +84,14 @@
           </section>
         </div>
       </section>
-            <img src="/images/icons/Banner.jpg" alt="Margin" style="width:100%;">
-            <div class="Wow">Shop the Trion Look</div>
-            <div class="Bam"> Trion look creates a community of high class and like minded individuals who share not only clothes, but an experience
-            </div>        
-            <div class="container">
+            <section class="shop-look">
+              <h4>Shop the Trion Look</h4>
+              <p>Trion look creates a community of high class and like minded individuals who share not only clothes, but an experience</p>
+            </section>
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="/images/icons/Women-Shirt (1).jpg" alt="Avatar" style="width:500px;height:500px;"> <div class="bottom-right">Trion Aesthetic</div>
+                    <img src="/images/icons/Women-Shirt%20(1).jpg" alt="Avatar" style="width:500px;height:500px;"> <div class="bottom-right">Trion Aesthetic</div>
                   </div>
                   <div class="flip-card-back">
                     <h1><u>Polo Tees</u></h1> 

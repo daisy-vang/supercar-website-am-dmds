@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/contact.css">
-  </head>
-  <body>
-      <!--<meta charset="UTF-8">
-      <link rel="stylesheet" href="contact.css">
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="css/contact.css">
       <link rel="stylesheet" href="css/navbar.css">
       <link rel="stylesheet" href="css/footer.css">
 
@@ -45,7 +42,7 @@
             <a href="cart.html">Cart<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
             <a href="account.html">Account<img src="images/icons/right-arrow.svg" alt="right-arrow" height="50px"></a>
         </div>
-    </nav> -->
+    </nav> 
 
     <div class="container">
       <div class="left">
@@ -80,15 +77,28 @@
             />
           </div>
 
-          <div class="inputBox">
-            <input
-            type="text"
-            name="phone number"
-            class="phone number"
-            placeholder="Enter your phone number"
-            />
-          </div>
+          <!--Code for phone number drop down with area code-->
+          <select id="country" onchange="country_code ()">
+            <option value="select country">Select Country</option>
+            <option value="+1 US">+1 US</option>
+            <option value="+44 UK">+44 UK</option>
+            <option value="+7 RU">+7 RU</option>
+            <option value="+39 IT">+39 IT</option>
+            <option value="+81 JP">+81 JP</option>
+            <option value="+52 MX">+52 MX</option>
+            <option value="+82 KR">+82 KR</option>
+            <option value="+34 ES">+34 ES</option>
+            <option value="+61 AU">+61 AU</option>
+            <option value="+1 CA">+1 CA</option>
+            <option value="+86 CN">+86 CN</option>
+            <option value="+33 FR">+33 FR</option>
+            <option value="+49 DE">+49 DE</option>
+            <option value="+91 IN">+91 IN</option>
+          </select>
 
+          <input type="tel" id="output" placeholder="Phone Number">
+          <!--End of code for phone number-->
+          
           </div>
           <div class="inputBox">
             <textarea 
@@ -103,6 +113,8 @@
       </div>
     </div>
 
+
+
   </body>
 </html>
 
@@ -113,8 +125,8 @@
 
 
 
-
-    <!--<footer>
+<!--
+    <footer>
       <ul>
           <li><a href="models.html">Models</a>
               <ul>
@@ -163,3 +175,4 @@
     <input type="text" id="Name" name="Name" placeholder="First and Last Name"
   </body>
 </html>
+-->

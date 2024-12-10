@@ -1,4 +1,21 @@
 header {
     position: relative;
     color: white;
+    text-align: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px; font-weight: 300;
+}
+
+.txt {
+    font-size: 35px;
+    padding-top: 1%; padding-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: 3%;
 }

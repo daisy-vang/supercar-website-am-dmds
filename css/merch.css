@@ -1,5 +1,6 @@
   .centered {
     position: absolute;
+    justify-content: space-around;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -148,11 +149,14 @@
     background-color: #000000;
     color: rgb(255, 255, 255);
     transform: rotateY(180deg);
+    flex-direction: column;
   }
   h1:hover{
     color: red;
   }
   .container {
+    padding-top: 5em;
+    padding-bottom: 15em;
     position: relative;
     text-align: center;
     color: rgb(105, 105, 105);

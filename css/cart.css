@@ -154,8 +154,9 @@ input::-webkit-outer-spin-button {
     float: right; 
     margin-right: 45em;
     margin-top: 6em;
+    border: 0.1em solid white;
+    
 }
-
 h2,
 u{
     text-align: left;
@@ -167,3 +168,27 @@ i:hover,
 i:focus{
     color: #d2d2d2d3;
 }
+h3{
+    margin-left: 20em;
+}
+#Women{
+    float: left;
+}
+.alignleft {
+    float: left;
+  }
+  
+  .alignright {
+    float: right;
+  }
+  
+  .Edit {
+    clear: both;
+  }
+  
+  .Edit {
+    background-color: grey;
+  }
+  hr{
+    border: 2px solid white;
+  }

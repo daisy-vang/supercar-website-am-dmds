@@ -3,7 +3,7 @@ let incomingLeftSlide = false;
 let abruptChange = false;
 let timedOut = false;
 showSlides(slideIndex);
-autoMove();
+setInterval(autoMove(), 8000);
 
 function autoMove() {
   plusSlides(1);

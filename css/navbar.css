@@ -144,10 +144,16 @@ nav ul li ul li a {
 /* Position right links to the right */
 nav ul.right li {
     float: right;
-    transform: translateY(-100%);
 
     display: flex;
     align-items: center;
+}
+
+/* We need to move the container on top of the nav so it doesn't get in the way of normal inputs */
+nav ul.right {
+    transform: translateY(-100%);
+    width: 50%;
+    float: right;
 }
 
 /* The cart is a little smaller than the other icons */

@@ -46,6 +46,7 @@
         </div>
     </nav>
     <main>
+        <!-- This header is just the image gallery -->
         <header>
             <!-- Each of these sections is one slide in the carousel -->
             <section class="header black-widow">
@@ -68,10 +69,11 @@
                 <h1>Meet the Trion Team</h1>
                 <button class="button-1" onclick="location.href='html/about.html';"><span class="text">About Us</span><span>About Us</span></button>
             </section>
-            <!-- Those onClick attributes link to slidwshow.js and move the slides -->
+            <!-- Those onClick attributes link to slidwshow.js and move the slides (-1 is left one and +1 is right one) -->
             <button class="arrow-button button-left" onclick="plusSlides(-1)"><img src="images/icons/left-arrow-black.svg" alt="left arrow" width="30"></button>
             <button class="arrow-button button-right" onclick="plusSlides(1)"><img src="images/icons/right-arrow-black.svg" alt="right arrow" width="30"></button>
         </header>
+        <!-- This cars div holds the sections and "click here!" things for the cars -->
         <div class="cars">
             <section class="nemesis-section">
                 <img src="images/nemesis.png" alt="Nemesis GT">
@@ -86,11 +88,14 @@
                 <button class="button-1" onclick="location.href = 'html/black-widow.html'">View More<span>View More</span></button>
             </section>
         </div>
+        <!-- This is the bar that seperates the top and bottom of the page -->
         <aside>
             <h2>Welcome to Trion</h2>
             <p>At Trion Motors, we don’t just build supercars; we build an experience. Our vision goes beyond the vehicle, it’s about creating a community of passionate individuals who share a love for innovation, performance, and luxury</p>
         </aside>
+        <!-- These are articles that also have an image, header, text, and call to action, but aren't cars, so they're structured differently -->
         <div class="not-cars">
+            <!-- There is a div instead of an img tag here because background images have background-position cover, while img tags don't -->
             <div class="merch-image"></div>
             <section>
                 <h2>Merchandise</h2>

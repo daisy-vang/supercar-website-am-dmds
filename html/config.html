@@ -47,7 +47,51 @@
     </nav>
 
     <main>
-        
+        <section class="configurator">
+            <div class="configurator-container">
+                <!-- Display Car 360 -->
+                <div class="car-image">
+                    <img id="carModel" src="car/white/car1.jpg" alt="Car Model" class="car-img">
+                </div>
+    
+                <!-- Configuration Options on the Right -->
+                <div class="configurator-options">
+                    <h2>Customize Your Supercar</h2>
+                   
+                    <!-- Color Selector -->
+                    <div class="option-section">
+                        <h3>Choose Your Color</h3>
+                        <div class="color-buttons">
+                            <button class="color-btn" style="background-color: #ffffff;" onclick="changeCarColor('white')"></button>
+                            <button class="color-btn" style="background-color: #ff0000;" onclick="changeCarColor('red')"></button>
+                            <button class="color-btn" style="background-color: #0000ff;" onclick="changeCarColor('blue')"></button>
+                            <button class="color-btn" style="background-color: #00ff00;" onclick="changeCarColor('green')"></button>
+                            <button class="color-btn" style="background-color: #000000;" onclick="changeCarColor('black')"></button>
+                            <button class="color-btn" style="background-color: #f1c40f;" onclick="changeCarColor('yellow')"></button>
+                        </div>
+                    </div>
+    
+                    <!-- Wheel Selector -->
+                    <div class="option-section">
+                        <h3>Choose Your Wheels</h3>
+                        <div class="wheel-buttons">
+                            <button class="wheel-btn" onclick="changeWheel('standard')">Standard</button>
+                            <button class="wheel-btn" onclick="changeWheel('sport')">Sport</button>
+                            <button class="wheel-btn" onclick="changeWheel('luxury')">Luxury</button>
+                        </div>
+                    </div>
+    
+                    <!-- Roof Type Selector -->
+                    <div class="option-section">
+                        <h3>Choose Roof Type</h3>
+                        <div class="roof-buttons">
+                            <button class="roof-btn" onclick="changeRoof('solid')">Solid</button>
+                            <button class="roof-btn" onclick="changeRoof('sunroof')">Sunroof</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -77,7 +121,7 @@
             </ul>    
         </section>
     </footer>
-    <script src="/js/navbar.js"></script>
+    <script src="/js/config.js"></script>
     <link rel="stylesheet" href="css/config.css">
     <title>Document</title>
 </head>

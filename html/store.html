@@ -45,54 +45,96 @@
         <a href="/html/account.html">Account<img src="/images/icons/right-arrow.svg" alt="right-arrow" height="50"></a>
     </div>
 </nav>
-        <header>
-            <div class="logo">
-                <h1>Trion Aestetic</h1>
-            </div>
-            <div class="cart">
-                <button id="CartButton">
-                    <span>Cart (<span id="cartcount">0</span>)</span>
-                </button>
-            </div>
-        </header>
-   <!--Main Shop Content-->
-        <main class="product-container">
-            <div class="product-card" id="product-1">
-                <img src="https://via.placeholder.com/250" alt="Hoodie" class="product-image">
-                <h3 class="product-name">Awesome Hoodie</h3>
-                <p class="product-price">$45.99</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            
-            <div class="product-card" id="product-2">
-                <img src="https://via.placeholder.com/250" alt="Shirt" class="product-image">
-                <h3 class="product-name">Awesome Shirt</h3>
-                <p class="product-price">$25.99</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            
-            <div class="product-card" id="product-3">
-                <img src="https://via.placeholder.com/250" alt="Jacket" class="product-image">
-                <h3 class="product-name">Awesome Jacket</h3>
-                <p class="product-price">$55.99</p>
-                <button class="add-to-cart">Add to Cart</button> 
-            </div>
-        </main>
-
-
-        <!--Cart Modal-->
-        <div id="cartModel" class="cart-modal">
-            <div class="cart-modal-content">
-                <h2>Your Cart</h2>
-                <div id="cartitems"></div>
-                <div class="cart-total">
-                    <p>Total: $<span id="cartTotal">0.00</span></p>
+            <section id="products">
+                <h2>Featured Products</h2>
+                <div class="product-container">
+                    <!-- Sample Product 1 -->
+                    <div class="product">
+                        <img src="shirt1.jpg" alt="Product 1">
+                        <h3>Stylish T-Shirt</h3>
+                        <p>$25.99</p>
+                        <button onclick="addToCart('Stylish T-Shirt', 25.99)">Add to Cart</button>
+                    </div>
+                    <!-- Sample Product 2 -->
+                    <div class="product">
+                        <img src="hat1.jpg" alt="Product 2">
+                        <h3>Cool Hat</h3>
+                        <p>$15.99</p>
+                        <button onclick="addToCart('Cool Hat', 15.99)">Add to Cart</button>
+                    </div>
+                    <!-- More products can be added here -->
                 </div>
-            <button id="checkoutButton">Proceed To Checkout</button>
-            <button id="closeCartButton">Close</button>
-        </div>
-    </div>
-        <script src="/js/store.js"></script>
+            </section>
+        
+            <main>
+                <header>
+                    <h1>Faux Cart Demo</h1>
+                    <p>Faux Cart is a JavaScript project designed to emulate shopping cart behavior on static websites. It uses
+                        local storage to emulate server side functionality.</p>
+                </header>
+                <h2>Products</h2>
+                <div id="products">
+        
+                    <div class="product">
+                        <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                        <h3 class="prodName">Product 01</h3>
+                        <p class="prodDesc">All about product 01</p>
+                        <span class="prodPrice">1.25</span><a href="" class="addToCart prodBtn">Add to Cart</a>
+                    </div>
+                    <div class="product">
+                        <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                        <h3 class="prodName">Product 02</h3>
+                        <p class="prodDesc">All about product 02</p>
+                        <span class="prodPrice">2.00</span><a href="" class="addToCart prodBtn">Add to Cart</a>
+                    </div>
+                    <div class="product">
+                        <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                        <h3 class="prodName">Product 03</h3>
+                        <p class="prodDesc">All about product 03</p>
+                        <span class="prodPrice">3.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+                    </div>
+                    <div class="product">
+                        <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                        <h3 class="prodName">Product 04</h3>
+                        <p class="prodDesc">All about product 04</p>
+                        <span class="prodPrice">4.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+                    </div>
+                    <div class="product">
+                        <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                        <h3 class="prodName">Product 05</h3>
+                        <p class="prodDesc">All about product 05</p>
+                        <span class="prodPrice">5.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+                    </div>
+                    <div class="product">
+                        <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                        <h3 class="prodName">Product 06</h3>
+                        <p class="prodDesc">All about product 06</p>
+                        <span class="prodPrice">6.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+                    </div>
+                    <div class="product">
+                        <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                        <h3 class="prodName">Product 07</h3>
+                        <p class="prodDesc">All about product 07</p>
+                        <span class="prodPrice">7.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+                    </div>
+                    <div class="product">
+                        <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                        <h3 class="prodName">Product 08</h3>
+                        <p class="prodDesc">All about product 08</p>
+                        <span class="prodPrice">8.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+                    </div>
+                    <div class="product">
+                        <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                        <h3 class="prodName">Product 09</h3>
+                        <p class="prodDesc">All about product 09</p>
+                        <span class="prodPrice">9.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+                    </div>
+        
+                </div>
+            </main>
+
+
+        
         <footer>
           <!-- This div is here to use flexbox to position these items -->
           <div class="links-copyright">
@@ -121,6 +163,6 @@
           </section>
       </footer>
       <script src="/js/navbar.js"></script>
-    <script src="/js/merch.js"></script>
+    <script src="/js/store.js"></script>
 </body>
 </html>

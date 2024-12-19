@@ -7,9 +7,8 @@ header {
 
 h1 {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 8%;
+    margin-left: 40%;
     font-size: 100px; font-weight: 300;
 }
 
@@ -22,31 +21,58 @@ h1 {
     text-indent: 3%;
 }
 
-button {
+button, .button-2 {
     background-color: #BC0000;
     color: white;
     border-color: #FF0000;
     border-radius: 30px;
+    padding: 15px 32px;
 }
 
 .our-values {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.thrive-for-the-future {
+.RP {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.t-f-t-f-txt {
-    font-size: 25px;
-}
-
-.t-f-t-f-pic {
-    justify-content: flex-end;
+.RP-txt {
+    font-size: 20px;
+    width: 60%;
+    padding-left: 15%;
+    text-indent: 4%;
 }
 
 h3 {
+    font-size: 40px;
+    padding-left: 15%;
+}
+
+.RP-pic {
+    display: flex;
+    margin-right: 5%;
+    align-items: center;
+}
+
+.button-2 {
+    margin-left: 60%;
+}
+
+.o-v-p {
+    text-indent: 4%;
+    font-size: 20px;
+    width: 55%;
+    padding: 1%;
+    justify-content: flex-end;
+}
+
+h2 {
     font-size: 40px;
 }
